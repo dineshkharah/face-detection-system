@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 
+from app.models import ROI
+
 app = FastAPI()
 
 
