@@ -1,10 +1,8 @@
 import mediapipe as mp
 
-mp_face_detection = mp.solutions.face_detection
+mp_face_detection = mp.tasks.vision
 
-face_detector = mp_face_detection.FaceDetection(
-    model_selection=0, min_detection_confidence=0.5
-)
+face_detector = mp_face_detection.FaceDetector
 
 
 def detect_face(image_np):
